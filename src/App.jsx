@@ -14,7 +14,7 @@ function App() {
   <AuthProvider>
     <BrowserRouter>
       <Header onLoginClick={() => setIsOpen(true)}/>
-        <main className="flex justify-center md:mt-44 mt-33 md:px-49 px-3 text-center min-h-[100vh] min-w-[320px] max-w-[1280px] mx-auto">
+        <main className="flex justify-center md:mt-44 mt-33 text-center min-h-[100vh] min-w-[320px] max-w-[1280px] mx-auto">
           <Routes>
             <Route path="/" element={<HomePage onLoginClick={() => setIsOpen(true)} />} />
             <Route path="/welcome" element={<WelcomePage />} />

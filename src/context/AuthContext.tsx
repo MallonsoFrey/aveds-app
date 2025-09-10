@@ -17,7 +17,6 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User>(null) 
 
-  // при загрузке проверяем localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem("user") 
     if (storedUser) {
@@ -26,7 +25,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []) 
 
   const login = (login: string, password: string) => {
-    // простая проверка (обычно это делается на сервере)
     if (password.length < 8) return false 
 
     const foundUser = users.find(

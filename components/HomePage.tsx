@@ -9,9 +9,9 @@ type HomePageProps = {
 export default function HomePage({onLoginClick}: HomePageProps) {
   
   return (
-    <div className="flex w-full flex-col gap-7 md:gap-20">
+    <div className="flex w-full mx-3 md:mx-49 flex-col gap-7 md:gap-20">
         <section className="flex flex-col w-full gap-9 md:max-h-62 md:w-[767px]">
-          <h1 className="text-3xl text-left md:text-5xl text-[#252B42] font-bold">Место для получения медицинской помощи</h1>
+          <h1 className="text-3xl md:leading-[80px] text-left md:text-[58px] text-[#252B42] font-bold">Место для получения медицинской помощи</h1>
           <div className="flex gap-3">
             <button
               onClick={onLoginClick} 
