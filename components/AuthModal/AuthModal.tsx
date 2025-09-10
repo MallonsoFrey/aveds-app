@@ -50,7 +50,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
               ✕
             </button>
 
-            <h2 className="text-4 text-center font-semibold mb-4 text-[#252B42]">
+            <h2 className="text-xs text-center font-semibold mb-4 text-[#252B42]">
               Авторизация
             </h2>
 
