@@ -50,7 +50,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
               ✕
             </button>
 
-            <h2 className="text-xs text-center font-semibold mb-4 text-[#252B42]">
+            <h2 className="text-4 text-center font-semibold mb-4 text-[#252B42]">
               Авторизация
             </h2>
 
@@ -73,7 +73,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
                 onChange={(e) => setForm({ ...form, password: e.target.value })}
                 required
               />
-              {error && <p className="text-red-500 text-center">{error}</p>}
+              {error && <p className="text-xs text-red-500 text-center">{error}</p>}
               <button
                 type="submit"
                 className="px-4 py-4 bg-[#FF685B] text-white rounded-md hover:bg-[#d3382a]"
