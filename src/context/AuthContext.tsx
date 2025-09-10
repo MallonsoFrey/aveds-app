@@ -1,5 +1,8 @@
 import { createContext, useContext, useEffect, useState } from "react" 
-import users from "../data/users.json" 
+import rawUsers from "../data/users.json" 
+
+type RawUser = { login: string; password: string; name: string }[];
+const users = rawUsers as RawUser;
 
 type User = {
   login: string 
